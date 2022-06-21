@@ -1,0 +1,28 @@
+/* Created By : Sangwin Gawande (https://sangw.in) */
+
+.list_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_scroll{
+    height: 200px;
+    width: 150px;
+    border: 1px solid brown;
+    overflow: auto;
+
+}
+
+.scroll_item {
+    height: 50px;
+    background-color: lightblue;
+    border: 1px solid yellow;
+    scroll-behavior: smooth;
+}
+
+.text-center{
+    text-align : center;
+}
+
+/* Created By : Sangwin Gawande (https://sangw.in) */

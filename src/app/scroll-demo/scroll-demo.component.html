@@ -1,0 +1,19 @@
+<!-- /* Created By : Sangwin Gawande (https://sangw.in) */ -->
+<div class="text-center">
+    <br/>
+    <br/>
+    <b>Vritual Scroll Demo</b>
+    <br/>
+    <br/>
+    <b>sliceIndexStart : {{sliceIndexStart}} <br/> sliceIndexEnd : {{sliceIndexEnd}}</b>
+</div>
+<br/>
+<br/>
+<div class="list_container">
+    <div class="list_scroll" appScrollDiv  #container (onScroll)="scrolled($event, container)">
+        <div *ngFor="let item of listItems | slice:sliceIndexStart:sliceIndexEnd" class="scroll_item">
+        {{item}}
+        </div>
+    </div>
+</div>
+<!-- /* Created By : Sangwin Gawande (https://sangw.in) */ -->
